@@ -10,7 +10,8 @@ public class SheetTest {
 
     @Before
     public void setup() {
-        sheet = new Sheet("Sheet Music for Guitar Beginners", 1.50, 3.50);
+        sheet = new Sheet("Sheet Music for Guitar Beginners", 1.50,
+                3.50, "Written things");
     }
 
     @Test
@@ -26,6 +27,11 @@ public class SheetTest {
     @Test
     public void canGetSellFor() {
         assertEquals(3.50, sheet.getSellFor(), 0.01);
+    }
+
+    @Test
+    public void canGetCategory() {
+        assertEquals("Written things", sheet.getCategory());
     }
 
     @Test

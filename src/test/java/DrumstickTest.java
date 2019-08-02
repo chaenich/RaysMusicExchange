@@ -10,7 +10,7 @@ public class DrumstickTest {
 
     @Before
     public void setup() {
-        drumstick = new Drumstick("Classical drumstick", 1.20, 4.20);
+        drumstick = new Drumstick("Classical drumstick", 1.20, 4.20, "Bangy things");
     }
 
     @Test
@@ -26,6 +26,11 @@ public class DrumstickTest {
     @Test
     public void canGetSellFor() {
         assertEquals(4.20, drumstick.getSellFor(), 0.01);
+    }
+
+    @Test
+    public void canGetCategory() {
+        assertEquals("Bangy things", drumstick.getCategory());
     }
 
     @Test

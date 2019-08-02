@@ -31,4 +31,9 @@ public class PianoTest {
     public void canGetMaterial() {
         assertEquals("Oak", piano.getMaterial());
     }
+
+    @Test
+    public void canPlay() {
+        assertEquals("Plink Plink", piano.play());
+    }
 }

@@ -22,4 +22,8 @@ public class Piano {
     public String getColour() {
         return colour;
     }
+
+    public String getMaterial() {
+        return material;
+    }
 }

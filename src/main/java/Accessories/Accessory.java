@@ -1,29 +1,14 @@
 package Accessories;
 
-public abstract class Accessory {
+import Shop.Stock;
+
+public abstract class Accessory extends Stock
+{
     private String description;
     private double buyFor;
     private double sellFor;
 
     public Accessory(String description, double buyFor, double sellFor) {
-        this.description = description;
-        this.buyFor = buyFor;
-        this.sellFor = sellFor;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public double getBuyFor() {
-        return buyFor;
-    }
-
-    public double getSellFor() {
-        return sellFor;
-    }
-
-    public double calculateMarkup() {
-        return sellFor - buyFor;
+        super(description, buyFor, sellFor);
     }
 }

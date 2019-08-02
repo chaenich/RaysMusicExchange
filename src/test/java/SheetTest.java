@@ -22,4 +22,9 @@ public class SheetTest {
     public void canGetBuyFor() {
         assertEquals(1.50, sheet.getBuyFor(), 0.01);
     }
+
+    @Test
+    public void canGetSellFor() {
+        assertEquals(3.50, sheet.getSellFor(), 0.01);
+    }
 }

@@ -26,6 +26,6 @@ public class Sheet implements ISell {
     }
 
     public double calculateMarkup() {
-        return 0.0;
+        return sellFor - buyFor;
     }
 }

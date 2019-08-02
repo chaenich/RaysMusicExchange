@@ -27,4 +27,9 @@ public class SheetTest {
     public void canGetSellFor() {
         assertEquals(3.50, sheet.getSellFor(), 0.01);
     }
+
+    @Test
+    public void canCalulateMarkup() {
+        assertEquals(2.00, sheet.calculateMarkup(), 0.01);
+    }
 }

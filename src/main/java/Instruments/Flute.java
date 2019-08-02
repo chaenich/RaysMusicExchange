@@ -25,10 +25,6 @@ public class Flute extends Instrument implements ISell {
         return "Peep Peep";
     }
 
-    public double calculateMarkup() {
-        return sellFor - buyFor;
-    }
-
     public String getDescription() {
         return description;
     }
@@ -39,5 +35,9 @@ public class Flute extends Instrument implements ISell {
 
     public double getSellFor() {
         return sellFor;
+    }
+
+    public double calculateMarkup() {
+        return sellFor - buyFor;
     }
 }

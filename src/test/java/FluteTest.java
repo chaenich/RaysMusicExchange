@@ -53,4 +53,9 @@ public class FluteTest {
     public void canGetSellFor() {
         assertEquals(35.00, flute.getSellFor(), 0.01);
     }
+
+    @Test
+    public void canCalulateMarkup() {
+        assertEquals(13.00, flute.calculateMarkup(), 0.01);
+    }
 }

@@ -17,4 +17,9 @@ public class PianoTest {
         assertEquals("Classical", piano.getType());
     }
 
+    @Test
+    public void canGetKeys() {
+        assertEquals(88, piano.getKeys());
+    }
+
 }

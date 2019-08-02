@@ -14,4 +14,8 @@ public class Piano {
     public String getType() {
         return type;
     }
+
+    public int getKeys() {
+        return keys;
+    }
 }

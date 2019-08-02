@@ -30,7 +30,7 @@ public class GuitarTest {
 
     @Test
     public void canGetStrings() {
-        assertEquals(6, guitar.getStrings());
+        assertEquals(6, guitar.getNumStrings());
     }
 
     @Test

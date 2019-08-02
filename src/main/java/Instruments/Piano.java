@@ -8,7 +8,7 @@ public class Piano extends Instrument {
         this.keys = keys;
     }
 
-    public int getKeys() {
+    public int getNumKeys() {
         return keys;
     }
 

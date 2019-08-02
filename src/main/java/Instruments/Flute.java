@@ -8,7 +8,7 @@ public class Flute extends Instrument {
         this.valves = valves;
     }
 
-    public int getValves() {
+    public int getNumValves() {
         return valves;
     }
 

@@ -8,7 +8,7 @@ public class Guitar extends Instrument {
         this.strings = strings;
     }
 
-    public int getStrings() {
+    public int getNumStrings() {
         return strings;
     }
 

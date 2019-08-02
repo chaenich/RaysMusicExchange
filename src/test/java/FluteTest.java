@@ -30,7 +30,7 @@ public class FluteTest {
 
     @Test
     public void canGetValves() {
-        assertEquals(8, flute.getValves());
+        assertEquals(8, flute.getNumValves());
     }
 
     @Test

@@ -10,7 +10,8 @@ public class FluteTest {
 
     @Before
     public void setup() {
-        flute = new Flute("Picoloe", "Bronzey", "Copper",8);
+        flute = new Flute("Picoloe", "Bronzey", "Copper",8,
+                "Lovely flute", 22.00, 35.00);
     }
 
     @Test
@@ -29,7 +30,7 @@ public class FluteTest {
     }
 
     @Test
-    public void canGetValves() {
+    public void canGetNumValves() {
         assertEquals(8, flute.getNumValves());
     }
 
@@ -38,4 +39,18 @@ public class FluteTest {
         assertEquals("Peep Peep", flute.play());
     }
 
+    @Test
+    public void canGetDescription() {
+        assertEquals("Lovely flute", flute.getDescription());
+    }
+
+    @Test
+    public void canGetBuyFor() {
+        assertEquals(22.00, flute.getBuyFor(), 0.01);
+    }
+
+    @Test
+    public void canGetSellFor() {
+        assertEquals(35.00, flute.getSellFor(), 0.01);
+    }
 }

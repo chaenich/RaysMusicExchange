@@ -1,6 +1,7 @@
 package Instruments;
 
 import Behaviours.IPlay;
+import Behaviours.ISell;
 
 public abstract class Instrument implements IPlay {
     private String type;

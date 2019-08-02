@@ -18,8 +18,14 @@ public class GuitarTest {
     }
 
     @Test
-    public void canGetStrings () {
+    public void canGetStrings() {
         assertEquals(6, guitar.getStrings());
+    }
+
+    @Test
+    public void  canGetColour() {
+        assertEquals("Red", guitar.getColour());
+
     }
 
 }

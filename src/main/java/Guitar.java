@@ -18,4 +18,8 @@ public class Guitar {
     public int getStrings() {
         return strings;
     }
+
+    public String getColour() {
+        return colour;
+    }
 }

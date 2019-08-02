@@ -1,15 +1,15 @@
 package Instruments;
 
 public class Piano extends Instrument {
-    private int keys;
+    private int numKeys;
 
-    public Piano(String type, String colour, String material, int keys) {
+    public Piano(String type, String colour, String material, int numKeys) {
         super(type, colour, material);
-        this.keys = keys;
+        this.numKeys = numKeys;
     }
 
     public int getNumKeys() {
-        return keys;
+        return numKeys;
     }
 
     public String play() {

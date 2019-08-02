@@ -1,15 +1,15 @@
 package Instruments;
 
 public class Guitar extends Instrument {
-    private int strings;
+    private int numStrings;
 
-    public Guitar (String type, String colour, String material,  int strings) {
+    public Guitar (String type, String colour, String material,  int numStrings) {
         super(type, colour, material);
-        this.strings = strings;
+        this.numStrings = numStrings;
     }
 
     public int getNumStrings() {
-        return strings;
+        return numStrings;
     }
 
     public String play() {

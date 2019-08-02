@@ -1,15 +1,15 @@
 package Instruments;
 
 public class Flute extends Instrument {
-    private int valves;
+    private int numValves;
 
-    public Flute(String type, String colour, String material, int valves) {
+    public Flute(String type, String colour, String material, int numValves) {
         super(type, colour, material);
-        this.valves = valves;
+        this.numValves = numValves;
     }
 
     public int getNumValves() {
-        return valves;
+        return numValves;
     }
 
     public String play() {

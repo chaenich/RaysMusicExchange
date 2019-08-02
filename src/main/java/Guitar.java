@@ -22,4 +22,8 @@ public class Guitar {
     public String getColour() {
         return colour;
     }
+
+    public String getMaterial() {
+        return material;
+    }
 }

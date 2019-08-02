@@ -22,4 +22,8 @@ public class PianoTest {
         assertEquals(88, piano.getKeys());
     }
 
+    @Test
+    public void canGetColour() {
+        assertEquals("Deep brown", piano.getColour());
+    }
 }

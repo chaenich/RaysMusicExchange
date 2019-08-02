@@ -18,4 +18,8 @@ public class Piano {
     public int getKeys() {
         return keys;
     }
+
+    public String getColour() {
+        return colour;
+    }
 }

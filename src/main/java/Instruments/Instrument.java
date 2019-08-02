@@ -1,12 +1,12 @@
-public class Guitar {
+package Instruments;
+
+public abstract class Instrument {
     private String type;
-    private int strings;
     private String colour;
     private String material;
 
-    public Guitar (String type, int strings, String colour, String material) {
+    public Instrument(String type, String colour, String material) {
         this.type = type;
-        this.strings = strings;
         this.colour = colour;
         this.material = material;
     }
@@ -15,19 +15,11 @@ public class Guitar {
         return type;
     }
 
-    public int getStrings() {
-        return strings;
-    }
-
     public String getColour() {
         return colour;
     }
 
     public String getMaterial() {
         return material;
-    }
-
-    public String play() {
-        return "Strum Strum";
     }
 }

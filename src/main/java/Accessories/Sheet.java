@@ -17,6 +17,10 @@ public class Sheet implements ISell {
         return description;
     }
 
+    public double getBuyFor() {
+        return buyFor;
+    }
+
     public double calculateMarkup() {
         return 0.0;
     }

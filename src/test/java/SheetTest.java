@@ -17,4 +17,9 @@ public class SheetTest {
     public void canGetDescription() {
         assertEquals("Sheet Music for Guitar Beginners", sheet.getDescription());
     }
+
+    @Test
+    public void canGetBuyFor() {
+        assertEquals(1.50, sheet.getBuyFor(), 0.01);
+    }
 }

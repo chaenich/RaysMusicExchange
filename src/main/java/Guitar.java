@@ -14,4 +14,8 @@ public class Guitar {
     public String getType() {
         return type;
     }
+
+    public int getStrings() {
+        return strings;
+    }
 }

@@ -14,7 +14,12 @@ public class GuitarTest {
 
     @Test
     public void canGetType() {
-        assertEquals("Electric", guitar.getType());
+         assertEquals("Electric", guitar.getType());
+    }
+
+    @Test
+    public void canGetStrings () {
+        assertEquals(6, guitar.getStrings());
     }
 
 }

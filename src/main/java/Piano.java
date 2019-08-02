@@ -1,0 +1,17 @@
+public class Piano {
+    private String type;
+    private int keys;
+    private String colour;
+    private String material;
+
+    public Piano(String type, int keys, String colour, String material) {
+        this.type = type;
+        this.keys = keys;
+        this.colour = colour;
+        this.material =  material;
+    }
+
+    public String getType() {
+        return type;
+    }
+}

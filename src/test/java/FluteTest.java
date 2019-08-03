@@ -28,13 +28,14 @@ public class FluteTest {
     public void canGetSellFor() {
         assertEquals(35.00, flute.getSellFor(), 0.01);
     }
+
     @Test
     public void canGetType() {
         assertEquals("Picoloe", flute.getType());
     }
 
     @Test
-    public void  canGetColour() {
+    public void canGetColour() {
         assertEquals("Bronzey", flute.getColour());
     }
 

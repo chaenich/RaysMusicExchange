@@ -45,7 +45,7 @@ public class PianoTest {
     }
 
     @Test
-    public void canGetKeys() {
+    public void canGetNumKeys() {
         assertEquals(88, piano.getNumKeys());
     }
 

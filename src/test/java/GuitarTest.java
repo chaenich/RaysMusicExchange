@@ -28,13 +28,14 @@ public class GuitarTest {
     public void canGetSellFor() {
         assertEquals(75.00, guitar.getSellFor(), 0.01);
     }
+
     @Test
     public void canGetType() {
          assertEquals("Electric", guitar.getType());
     }
 
     @Test
-    public void  canGetColour() {
+    public void canGetColour() {
         assertEquals("Red", guitar.getColour());
     }
 
@@ -44,7 +45,7 @@ public class GuitarTest {
     }
 
     @Test
-    public void canGetStrings() {
+    public void canGetNumStrings() {
         assertEquals(6, guitar.getNumStrings());
     }
 

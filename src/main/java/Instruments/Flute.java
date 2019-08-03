@@ -8,13 +8,10 @@ public class Flute extends Instrument implements ISell {
     private double buyFor;
     private double sellFor;
 
-    public Flute(String type, String colour, String material, int numValves,
-                 String description, double buyFor, double sellFor) {
-        super(type, colour, material);
+    public Flute(String description, double buyFor, double sellFor,
+                 String type, String colour, String material, int numValves) {
+        super(description, buyFor, sellFor, type, colour, material);
         this.numValves = numValves;
-        this.description = description;
-        this.buyFor = buyFor;
-        this.sellFor = sellFor;
     }
 
     public int getNumValves() {
@@ -23,21 +20,5 @@ public class Flute extends Instrument implements ISell {
 
     public String play() {
         return "Peep Peep";
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public double getBuyFor() {
-        return buyFor;
-    }
-
-    public double getSellFor() {
-        return sellFor;
-    }
-
-    public double calculateMarkup() {
-        return sellFor - buyFor;
     }
 }

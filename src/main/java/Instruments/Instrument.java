@@ -2,13 +2,16 @@ package Instruments;
 
 import Behaviours.IPlay;
 import Behaviours.ISell;
+import Shop.Stock;
 
-public abstract class Instrument implements IPlay {
+public abstract class Instrument extends Stock implements IPlay {
     private String type;
     private String colour;
     private String material;
 
-    public Instrument(String type, String colour, String material) {
+    public Instrument(String description, double buyFor, double sellFor,
+                      String type, String colour, String material) {
+        super(description, buyFor, sellFor);
         this.type = type;
         this.colour = colour;
         this.material = material;

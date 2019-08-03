@@ -10,9 +10,24 @@ public class GuitarTest {
 
     @Before
     public void setup() {
-        guitar = new Guitar("Electric", "Red", "Wood-Plastic", 6);
+        guitar = new Guitar("Lovely sounding strings", 45.00, 75.00,
+                "Electric", "Red", "Wood-Plastic", 6);
     }
 
+    @Test
+    public void canGetDescription() {
+        assertEquals("Lovely sounding strings", guitar.getDescription());
+    }
+
+    @Test
+    public void canGetBuyFor() {
+        assertEquals(45.00, guitar.getBuyFor(), 0.01);
+    }
+
+    @Test
+    public void canGetSellFor() {
+        assertEquals(75.00, guitar.getSellFor(), 0.01);
+    }
     @Test
     public void canGetType() {
          assertEquals("Electric", guitar.getType());
@@ -36,6 +51,11 @@ public class GuitarTest {
     @Test
     public void canPlay() {
         assertEquals("Strum Strum", guitar.play());
+    }
+
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(30.00, guitar.calculateMarkup(), 0.01);
     }
 
 }

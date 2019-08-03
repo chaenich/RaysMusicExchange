@@ -1,10 +1,13 @@
 package Instruments;
 
-public class Guitar extends Instrument {
+import Behaviours.ISell;
+
+public class Guitar extends Instrument implements ISell {
     private int numStrings;
 
-    public Guitar (String type, String colour, String material,  int numStrings) {
-        super(type, colour, material);
+    public Guitar (String description, double buyFor, double sellFor,
+                   String type, String colour, String material, int numStrings) {
+        super(description, buyFor, sellFor, type, colour, material);
         this.numStrings = numStrings;
     }
 

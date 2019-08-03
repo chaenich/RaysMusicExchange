@@ -14,4 +14,8 @@ public class Shop {
     public int getStockQty() {
         return stock.size();
     }
+
+    public void addItemToStock(ISell item) {
+        stock.add(item);
+    }
 }

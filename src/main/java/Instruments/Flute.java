@@ -1,8 +1,6 @@
 package Instruments;
 
-import Behaviours.ISell;
-
-public class Flute extends Instrument implements ISell {
+public class Flute extends Instrument {
     private int numValves;
 
     public Flute(String description, double buyFor, double sellFor,

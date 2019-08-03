@@ -1,9 +1,6 @@
 package Shop;
 
 import Behaviours.ISell;
-import Accessories.Accessory;
-import Instruments.Instrument;
-
 
 public abstract class Stock implements ISell {
     private String description;

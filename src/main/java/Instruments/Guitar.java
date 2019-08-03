@@ -1,8 +1,6 @@
 package Instruments;
 
-import Behaviours.ISell;
-
-public class Guitar extends Instrument implements ISell {
+public class Guitar extends Instrument {
     private int numStrings;
 
     public Guitar (String description, double buyFor, double sellFor,

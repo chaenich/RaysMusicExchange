@@ -1,8 +1,6 @@
 package Instruments;
 
-import Behaviours.ISell;
-
-public class Piano extends Instrument implements ISell {
+public class Piano extends Instrument {
     private int numKeys;
 
     public Piano(String description, double buyFor, double sellFor,

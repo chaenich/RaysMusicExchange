@@ -1,7 +1,6 @@
 package Instruments;
 
 import Behaviours.IPlay;
-import Behaviours.ISell;
 import Shop.Stock;
 
 public abstract class Instrument extends Stock implements IPlay {

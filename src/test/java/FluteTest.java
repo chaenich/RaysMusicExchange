@@ -1,4 +1,5 @@
 import Instruments.Flute;
+import Instruments.InstrumentType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,7 +12,7 @@ public class FluteTest {
     @Before
     public void setup() {
         flute = new Flute("Lovely flute", 22.00, 35.00,
-                "Picoloe", "Bronzey", "Copper",8);
+                InstrumentType.WOODWIND, "Bronzey", "Copper",8);
     }
 
     @Test
@@ -31,7 +32,7 @@ public class FluteTest {
 
     @Test
     public void canGetType() {
-        assertEquals("Picoloe", flute.getType());
+        assertEquals(InstrumentType.WOODWIND, flute.getType());
     }
 
     @Test

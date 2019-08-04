@@ -1,6 +1,7 @@
 import Accessories.Sheet;
 import Instruments.Flute;
 import Instruments.Guitar;
+import Instruments.InstrumentType;
 import Shop.Shop;
 import org.junit.Before;
 import org.junit.Test;
@@ -28,9 +29,9 @@ public class ShopTest {
     @Test
     public void canAddItemToStock() {
         guitar1 = new Guitar("Lovely sounding strings", 45.00, 75.00,
-                "Electric", "Red", "Wood-Plastic", 6);
+                InstrumentType.STRING, "Red", "Wood-Plastic", 6);
         flute1 = new Flute("Lovely flute", 22.00, 35.00,
-                "Picoloe", "Bronzey", "Copper", 8);
+                InstrumentType.WOODWIND, "Bronzey", "Copper", 8);
         shop.addItemToStock(guitar1);
         shop.addItemToStock(flute1);
         assertEquals(2, shop.getStockQty());
@@ -39,9 +40,9 @@ public class ShopTest {
     @Test
     public void canRemoveItemFromStock() {
         guitar1 = new Guitar("Lovely sounding strings", 45.00, 75.00,
-                "Electric", "Red", "Wood-Plastic", 6);
+                InstrumentType.STRING, "Red", "Wood-Plastic", 6);
         guitar2 = new Guitar("Rubbish guitar", 25.00, 26.00,
-                "Acoustic", "Brown", "Plastic", 4);
+                InstrumentType.STRING, "Brown", "Plastic", 4);
         shop.addItemToStock(guitar1);
         shop.addItemToStock(guitar2);
         assertEquals(2, shop.getStockQty());
@@ -53,11 +54,11 @@ public class ShopTest {
     @Test
     public void canCalulateTotalAmountOfProfit() {
         guitar1 = new Guitar("Lovely sounding strings", 45.00, 75.00,
-                "Electric", "Red", "Wood-Plastic", 6);
+                InstrumentType.STRING, "Red", "Wood-Plastic", 6);
         guitar2 = new Guitar("Rubbish guitar", 25.00, 26.00,
-                "Acoustic", "Brown", "Plastic", 4);
+                InstrumentType.STRING, "Brown", "Plastic", 4);
         flute1 = new Flute("Lovely flute", 22.00, 35.00,
-                "Picoloe", "Bronzey", "Copper", 8);
+                InstrumentType.WOODWIND, "Bronzey", "Copper", 8);
         sheet1 = new Sheet("Sheet Music for Guitar Beginners", 1.50,
                 3.50, "Written things");
         shop.addItemToStock(guitar1);

@@ -4,7 +4,7 @@ public class Flute extends Instrument {
     private int numValves;
 
     public Flute(String description, double buyFor, double sellFor,
-                 String type, String colour, String material, int numValves) {
+                 InstrumentType type, String colour, String material, int numValves) {
         super(description, buyFor, sellFor, type, colour, material);
         this.numValves = numValves;
     }

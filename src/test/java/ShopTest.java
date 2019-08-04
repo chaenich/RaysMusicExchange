@@ -1,3 +1,4 @@
+import Instruments.Flute;
 import Instruments.Guitar;
 import Shop.Shop;
 import org.junit.Before;
@@ -10,6 +11,7 @@ public class ShopTest {
     Shop shop;
     Guitar guitar1;
     Guitar guitar2;
+    Flute flute1;
 
     @Before
     public void setup() {
@@ -25,9 +27,13 @@ public class ShopTest {
     public void canAddItemToStock() {
         guitar1 = new Guitar("Lovely sounding strings", 45.00, 75.00,
                 "Electric", "Red", "Wood-Plastic", 6);
+        flute1 = new Flute("Lovely flute", 22.00, 35.00,
+                "Picoloe", "Bronzey", "Copper", 8);
         shop.addItemToStock(guitar1);
-        assertEquals(1, shop.getStockQty());
+        shop.addItemToStock(flute1);
+        assertEquals(2, shop.getStockQty());
     }
+
 
     @Test
     public void canRemoveItemFromStock() {

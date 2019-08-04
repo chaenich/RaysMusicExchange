@@ -1,3 +1,4 @@
+import Accessories.Sheet;
 import Instruments.Flute;
 import Instruments.Guitar;
 import Shop.Shop;
@@ -12,6 +13,7 @@ public class ShopTest {
     Guitar guitar1;
     Guitar guitar2;
     Flute flute1;
+    Sheet sheet1;
 
     @Before
     public void setup() {
@@ -34,7 +36,6 @@ public class ShopTest {
         assertEquals(2, shop.getStockQty());
     }
 
-
     @Test
     public void canRemoveItemFromStock() {
         guitar1 = new Guitar("Lovely sounding strings", 45.00, 75.00,
@@ -47,5 +48,22 @@ public class ShopTest {
         shop.removeItemFromStock(guitar2);
         assertEquals(1, shop.getStockQty());
 
+    }
+
+    @Test
+    public void canCalulateTotalAmountOfProfit() {
+        guitar1 = new Guitar("Lovely sounding strings", 45.00, 75.00,
+                "Electric", "Red", "Wood-Plastic", 6);
+        guitar2 = new Guitar("Rubbish guitar", 25.00, 26.00,
+                "Acoustic", "Brown", "Plastic", 4);
+        flute1 = new Flute("Lovely flute", 22.00, 35.00,
+                "Picoloe", "Bronzey", "Copper", 8);
+        sheet1 = new Sheet("Sheet Music for Guitar Beginners", 1.50,
+                3.50, "Written things");
+        shop.addItemToStock(guitar1);
+        shop.addItemToStock(guitar2);
+        shop.addItemToStock(flute1);
+        shop.addItemToStock(sheet1);
+        assertEquals(46.00, shop.canCalulateTotalAmountOfProfit(), 0.01);
     }
 }
